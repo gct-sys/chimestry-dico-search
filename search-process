@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Recherche Dictionnaire de Chimie</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align:center; margin-top:50px; }
+        input[type="text"] {
+            padding:10px; width:60%; border-radius:8px; border:1px solid #ccc;
+        }
+        button {
+            padding:10px 15px; border-radius:8px; background:#4285F4; color:white; border:none; cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Recherche dans le dictionnaire</h2>
+    <form onsubmit="(function(f){
+        var mot = f.query.value.trim();
+        if(!mot) return false;
+        var motEncode = encodeURIComponent(mot);
+        var url = 'https://sites.google.com/view/dictionnaire-de-chimie/dictionnaire/' + motEncode + '?authuser=0';
+        window.location.href = url;
+        return false;
+    })(this);">
+        <input type="text" name="query" placeholder="Entrez un mot (ex : isomère)" required>
+        <button type="submit">🔍 Rechercher</button>
+    </form>
+</body>
+</html>
