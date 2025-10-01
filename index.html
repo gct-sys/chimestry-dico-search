@@ -1,81 +1,48 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Premier Site Web</title>
+<style>
+    /* 1. Style des titres et du texte de votre bloc */
+    .custom-widget h2 {
+        color: #5cb85c;
+        border-bottom: 2px solid #333; /* Ajout d'une ligne pour le style */
+        padding-bottom: 5px;
+    }
+    .custom-widget p {
+        font-family: Arial, sans-serif;
+        color: #333;
+    }
+
+    /* 2. Style du conteneur du widget pour qu'il ressemble à une section */
+    .custom-widget {
+        width: 100%; /* Prend toute la largeur de l'iframe */
+        margin: 0;
+        padding: 15px;
+        background: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère pour le détacher */
+    }
+
+    /* 3. Style des listes */
+    .custom-widget ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .custom-widget li {
+        margin-bottom: 8px;
+    }
+</style>
+
+<div class="custom-widget">
     
-    <style>
-        /* Styles appliqués à tout le corps de la page */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
+    <h2>À Propos de Ce Bloc</h2>
+    <p>
+        Ce code ne contient plus les balises de page complète. Il est optimisé pour être intégré dans un cadre (iframe) de Google Sites.
+    </p>
 
-        /* Style de l'en-tête (Header) */
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        /* Style du conteneur principal */
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden; /* Pour contenir les flottants si vous en ajoutez */
-            padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 30px;
-        }
-
-        /* Style des titres */
-        h1, h2 {
-            color: #5cb85c;
-        }
-
-        /* Style du pied de page (Footer) */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-<body>
-
-    <header>
-        <h1>Bienvenue sur Mon Site !</h1>
-    </header>
-
-    <div class="container">
-        
-        <h2>À Propos de Cette Page</h2>
-        <p>
-            Ceci est votre fichier de page d'accueil (`index.htm`) de base. Il inclut une structure **HTML** simple (le contenu) et des styles **CSS** (la présentation) directement dans la balise `<style>` de l'en-tête.
-        </p>
-
-        <h2>Comment l'utiliser</h2>
-        <ul>
-            <li>**HTML :** Modifiez le contenu dans les balises `<body>...</body>`.</li>
-            <li>**CSS :** Modifiez les styles à l'intérieur de la balise `<style>...</style>` pour changer les couleurs, les polices et la mise en page.</li>
-        </ul>
-        
-        <p>
-            Vous pouvez enregistrer ce code sous le nom de fichier **<code>index.htm</code>** ou **<code>index.html</code>**.
-        </p>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Mon Site. Tous droits réservés.</p>
-    </footer>
-
-</body>
-</html>
+    <h2>Comment ça marche</h2>
+    <ul>
+        <li>**HTML :** Le contenu ci-dessous est affiché.</li>
+        <li>**CSS :** Le style dans la balise **<code>&lt;style&gt;</code>** s'applique uniquement aux éléments à l'intérieur de ce bloc (classe <code>.custom-widget</code>).</li>
+    </ul>
+    
+    <p style="text-align: center;">
+        Ceci remplace votre pied de page précédent.
+    </p>
+</div>
